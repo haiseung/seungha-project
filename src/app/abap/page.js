@@ -15,7 +15,7 @@ export default function AbapPage() {
         onClick={() => router.push('/')}
       >
         <ArrowLeft className="w-4 h-4 mr-2" />
-        µ¹¾Æ°¡±â
+        돌아가기
       </Button>
       <h1 className="text-2xl font-bold mb-8">ABAP Table Generator</h1>
       <AbapTools />
