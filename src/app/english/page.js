@@ -7,24 +7,24 @@ import { useRouter } from 'next/navigation';
 
 const conversationData = {
   daily: [
-    { text: "What did you do this weekend?", pronunciation: "ฟำ ต๐ตๅ ภฏ ตฮ ต๐ฝบ ภงฤหตๅ?" },
-    { text: "I love this weather today!", pronunciation: "พฦภฬ ทฏบ๊ ต๐ฝบ ฟþด๕ ล๕ตฅภฬ!" },
-    { text: "Have you had lunch yet?", pronunciation: "วุบ๊ ภฏ วุตๅ ทฑฤก ฟพ?" },
-    { text: "What time do you usually wake up?", pronunciation: "ฟำ ลธภำ ตฮ ภฏ ภฏมึพ๓ธฎ ฟþภฬลฉ พ๗?" },
-    { text: "This coffee tastes amazing!", pronunciation: "ต๐ฝบ ฤฟวว ลืภฬฝบร๗ พ๎ธÞภฬยก!" },
-    { text: "Where do you live?", pronunciation: "ฟþพ๎ ตฮ ภฏ ธฎบ๊?" },
-    { text: "How was your day?", pronunciation: "วฯฟ์ ฟ๖ม๎ ภฏพ๎ ตฅภฬ?" },
-    { text: "What's your favorite food?", pronunciation: "ฟำร๗ ภฏพ๎ ฦไภฬบธธด วชตๅ?" },
+    { text: "What did you do this weekend?", pronunciation: "ยฟร“ ยตรฐยตรฅ ร€ยฏ ยตร ยตรฐยฝยบ ร€ยงรรยตรฅ?" },
+    { text: "I love this weather today!", pronunciation: "ยพรร€ร ยทยฏยบรช ยตรฐยฝยบ ยฟรพยดรต ร…รตยตยฅร€ร!" },
+    { text: "Have you had lunch yet?", pronunciation: "รรยบรช ร€ยฏ รรยตรฅ ยทยฑรยก ยฟยพ?" },
+    { text: "What time do you usually wake up?", pronunciation: "ยฟร“ ร…ยธร€ร“ ยตร ร€ยฏ ร€ยฏรร–ยพรณยธยฎ ยฟรพร€รร…ยฉ ยพรท?" },
+    { text: "This coffee tastes amazing!", pronunciation: "ยตรฐยฝยบ รยฟรร ร…ร—ร€รยฝยบรรท ยพรฎยธรร€รรยก!" },
+    { text: "Where do you live?", pronunciation: "ยฟรพยพรฎ ยตร ร€ยฏ ยธยฎยบรช?" },
+    { text: "How was your day?", pronunciation: "รรยฟรฌ ยฟรถรรฎ ร€ยฏยพรฎ ยตยฅร€ร?" },
+    { text: "What's your favorite food?", pronunciation: "ยฟร“รรท ร€ยฏยพรฎ รรคร€รยบยธยธยด รยชยตรฅ?" },
   ],
   travel: [
-    { text: "Where is the nearest subway station?", pronunciation: "ฟþพ๎ ภฬม๎ ด๕ ดฯพ๎ธฎฝบฦฎ ผทฟþภฬ ฝบลืภฬผว?" },
-    { text: "How much is this?", pronunciation: "วฯฟ์ ธำฤก ภฬม๎ ต๐ฝบ?" },
-    { text: "Can you recommend a good restaurant?", pronunciation: "ฤต ภฏ ทนฤฟธเตๅ พ๎ ฑย ทนฝบลไถ๛?" },
-    { text: "What time is check-out?", pronunciation: "ฟำ ลธภำ ภฬม๎ รผลฉพฦฟ๔?" },
-    { text: "I'd like to book a room.", pronunciation: "พฦภฬตๅ ถ๓ภฬลฉ ล๕ บฯ พ๎ ท๋." },
-    { text: "How do I get to the airport?", pronunciation: "วฯฟ์ ตฮ พฦภฬ ฐู ล๕ ต๐ ฟกพ๎ฦ๗ฦฎ?" },
-    { text: "Is this the right bus?", pronunciation: "ภฬม๎ ต๐ฝบ ด๕ ถ๓ภี น๖ฝบ?" },
-    { text: "Can you take a photo for me?", pronunciation: "ฤต ภฏ ลืภฬลฉ พ๎ ฦ๗ลไ ฦ๗ นฬ?" },
+    { text: "Where is the nearest subway station?", pronunciation: "ยฟรพยพรฎ ร€รรรฎ ยดรต ยดรยพรฎยธยฎยฝยบรยฎ ยผยทยฟรพร€ร ยฝยบร…ร—ร€รยผร?" },
+    { text: "How much is this?", pronunciation: "รรยฟรฌ ยธร“รยก ร€รรรฎ ยตรฐยฝยบ?" },
+    { text: "Can you recommend a good restaurant?", pronunciation: "รยต ร€ยฏ ยทยนรยฟยธร ยตรฅ ยพรฎ ยฑร ยทยนยฝยบร…รคยถรป?" },
+    { text: "What time is check-out?", pronunciation: "ยฟร“ ร…ยธร€ร“ ร€รรรฎ รยผร…ยฉยพรยฟรด?" },
+    { text: "I'd like to book a room.", pronunciation: "ยพรร€รยตรฅ ยถรณร€รร…ยฉ ร…รต ยบร ยพรฎ ยทรซ." },
+    { text: "How do I get to the airport?", pronunciation: "รรยฟรฌ ยตร ยพรร€ร ยฐร ร…รต ยตรฐ ยฟยกยพรฎรรทรยฎ?" },
+    { text: "Is this the right bus?", pronunciation: "ร€รรรฎ ยตรฐยฝยบ ยดรต ยถรณร€ร• ยนรถยฝยบ?" },
+    { text: "Can you take a photo for me?", pronunciation: "รยต ร€ยฏ ร…ร—ร€รร…ยฉ ยพรฎ รรทร…รค รรท ยนร?" },
   ]
 };
 
@@ -53,10 +53,10 @@ export default function EnglishPage() {
         onClick={() => router.push('/')}
       >
         <ArrowLeft className="w-4 h-4 mr-2" />
-        ตนพฦฐกฑโ
+        ยตยนยพรยฐยกยฑรข
       </Button>
       
-      <h1 className="text-2xl font-bold mb-8">ฟตพ๎ ศธศญ ฟฌฝภ</h1>
+      <h1 className="text-2xl font-bold mb-8">ยฟยตยพรฎ รยธรยญ ยฟยฌยฝร€</h1>
       
       <div className="max-w-2xl mx-auto space-y-6">
         <div className="flex gap-4">
@@ -69,7 +69,7 @@ export default function EnglishPage() {
               onChange={(e) => setCategory(e.target.value)}
               className="mr-2"
             />
-            ภฯป๓ ศธศญ
+            ร€รยปรณ รยธรยญ
           </label>
           <label className="flex items-center">
             <input
@@ -80,12 +80,12 @@ export default function EnglishPage() {
               onChange={(e) => setCategory(e.target.value)}
               className="mr-2"
             />
-            ฟฉวเ ศธศญ
+            ยฟยฉรร  รยธรยญ
           </label>
         </div>
 
         <Button onClick={generateRandomSentences}>
-          นฎภๅ ปýผบวฯฑโ
+          ยนยฎร€รฅ ยปรฝยผยบรรยฑรข
         </Button>
 
         {sentences.length > 0 && (
