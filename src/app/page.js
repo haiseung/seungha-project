@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-8 text-center">°³¹ß µµ±¸</h1>
+      <h1 className="text-2xl font-bold mb-8 text-center">ê°œë°œ ë„êµ¬</h1>
       <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
         <Card 
           className="cursor-pointer hover:bg-gray-50 transition-colors"
@@ -16,7 +16,7 @@ export default function Home() {
         >
           <CardContent className="flex flex-col items-center p-6">
             <Code className="w-12 h-12 mb-4" />
-            <h2 className="text-xl font-semibold">ABAP µµ±¸</h2>
+            <h2 className="text-xl font-semibold">ABAP ë„êµ¬</h2>
           </CardContent>
         </Card>
 
@@ -26,7 +26,7 @@ export default function Home() {
         >
           <CardContent className="flex flex-col items-center p-6">
             <MessageCircle className="w-12 h-12 mb-4" />
-            <h2 className="text-xl font-semibold">¿µ¾î È¸È­</h2>
+            <h2 className="text-xl font-semibold">ì˜ì–´ íšŒí™”</h2>
           </CardContent>
         </Card>
       </div>
